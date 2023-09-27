@@ -1,6 +1,7 @@
 /* estilos da página index */
 
-h1 {
+h1,
+h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: indianred;
 }
@@ -46,6 +47,7 @@ p {
 .wh-300 {
   width: 300px;
   height: 300px;
+  margin-bottom: 50px;
 }
 
 .tm-social {
@@ -54,7 +56,17 @@ p {
 }
 
 .video-container {
+  display: flex;
+  flex-flow: column;
   margin-top: 20px; /* Espaço entre o conteúdo principal e o vídeo */
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* estilos da página contato */
