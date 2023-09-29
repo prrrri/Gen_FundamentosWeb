@@ -6,6 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CONTATO</title>
   <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <script>
+    nome1 = window.prompt("Qual o seu nome?");
+    if (nome1 != null && nome1 != "") {
+      document.write("Olá, " + nome1 + "!");
+    }
+    else {
+      document.write("Olá, visitante");
+    }
+
+  </script>
+
 </head>
 
 <body>
@@ -20,6 +31,22 @@
       <a href="contato.html">CONTATO</a>
     </li>
   </ul>
+
+  <script>
+    function validar() {
+      if (document.cadastro.nome.value == "") {
+        window.alert("Você deve preencher o campo nome, pois ele é um campo obrigatório...");
+        document.cadastro.nome.focus();
+        return false;
+      }
+      if (document.cadastro.observacoes.value == "") {
+        window.alert("Você deve colocar alguma observação, pois o campo é obrigatório...");
+        document.cadastro.observacoes.focus();
+        return false;
+      }
+    }
+  </script>
+
 
   <h1>Contato/Sugestões</h1>
 
